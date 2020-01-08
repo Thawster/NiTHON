@@ -1,0 +1,102 @@
+<html>
+<head><title>NiTHON</title>
+<SCRIPT language="JavaScript">
+
+	// pre-load image:
+		if (document.images) 
+{
+  title01 = new Image(112,400); title02 = new Image(112,400);
+  title03 = new Image(112,400); title04 = new Image(112,400);
+  title05 = new Image(112,400); title06 = new Image(112,400);
+  title07 = new Image(112,400); title08 = new Image(112,400);  
+  title01.src = "./art/buttons/title.gif"; 	  title02.src = "./art/buttons/wrds-cnslt.gif";
+  title03.src = "wrds-nws.gif";   title04.src = "wrds-hstry.gif";
+  title05.src = "wrds-cntct.gif"; title06.src = "wrds-prsnl.gif";
+  title07.src = "wrds-lnks.gif";  title08.src = "wrds-store.gif";
+}
+
+	// note-function to change any img with another
+	 
+function centerimg(imgName,imgObjName) 
+{
+if (document.images) {
+  document.images[imgName].src = eval(imgObjName + ".src");
+}}
+
+ //--></SCRIPT>
+
+</head>
+<body background="./art/leath02.jpg" text="blue">
+<div align="center" >
+<table >
+<tr >
+   <td width="300" ></td>
+   <td width="70%" >
+	<a href="consult.html" 
+	onmouseover="centerimg('titleimg','title02')"
+ 	onmouseout="centerimg('titleimg','title01')" />
+	   <img src="art/buttons/bttn-consult.gif" border="0" />
+</td>
+</tr>
+
+<tr >
+   <td ><a href="prsnnl.html"
+	onmouseover="centerimg('titleimg','title03')"
+ 	onmouseout="centerimg('titleimg','title01')" />
+<img src="art/buttons/bttn-person.gif" align="right" border="0" />
+</td> 
+		
+</tr>
+
+<tr align="center" >
+   <td ><a href="history.htm"
+	onmouseover="centerimg('titleimg','title04')"
+ 	onmouseout="centerimg('titleimg','title01')" />
+<img src="art/buttons/bttn-history.gif" border="0" />
+</td> 
+   <td rowspan="3">
+	<a href="index.html"
+	onmouseover="centerimg('titleimg','title01')"
+ 	onmouseout="centerimg('titleimg','title01')" />
+<img name="art/buttons/titleimg" src="art/title.gif" 
+	   height="112" width="400" border="0" />
+	</a></td>
+</tr>
+
+<tr >
+   <td ><a href="contact.html"
+	onmouseover="centerimg('titleimg','title05')"
+ 	onmouseout="centerimg('titleimg','title01')" />
+<img src="art/buttons/bttn-contact.gif" border="0" />
+</td> 
+</tr>
+
+<tr align="center" >
+   <td ><a href="intrst.htm"
+	onmouseover="centerimg('titleimg','title06')"
+ 	onmouseout="centerimg('titleimg','title01')" />
+<img src="art/buttons/bttn-intrst.gif" border="0" />
+</td> 
+</tr>
+
+<tr >
+   <td ><a href="lnk.htm"
+	onmouseover="centerimg('titleimg','title07')"
+ 	onmouseout="centerimg('titleimg','title01')" />
+<img src="art/buttons/bttn-links.gif" align="right" border="0" >
+</td> 
+   <td align="center"><b>Quality Through Experience</b></td>
+</tr>
+
+<tr >
+   <td ></td>
+   <td ><a href="http://www.friendenemyconspiracy.blogspot.com"
+	onmouseover="centerimg('titleimg','title08')"
+ 	onmouseout="centerimg('titleimg','title01')" />
+<img src="art/buttons/bttn-blog.gif" border="0" >
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>
